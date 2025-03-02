@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALAXIA LOGO EDITORS</title>
+    <link rel="icon" href="icon.jpg" type="image/jpeg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+        }
+
+        /* Menú */
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        .logo-empresa {
+            font-size: 24px;
+            color: #25D366;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #25D366;
+        }
+
+        /* Contenido Principal */
+        .contenido {
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 50px;
+            margin: 5px;
+            background-color: white;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .descripcion {
+            width: 60%;
+            padding-right: 30px;
+        }
+
+        .imagen-muestra {
+            width: 35%;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            padding: 5px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .imagen-muestra img {
+            width: 100%;
+            border-radius: 10px;
+            display: block;
+        }
+
+        .precio {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background-color: #25D366;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contenido {
+                flex-direction: column;
+                padding: 20px;
+            }
+
+            .descripcion, .imagen-muestra {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .menu {
+                padding: 15px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <div class="logo-empresa">GALAXIA LOGO EDITORS</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#ventas">Ventas</a>
+            <a href="#grupos">Grupos</a>
+        </div>
+    </nav>
+
+    <div class="contenido" id="home">
+        <div class="descripcion">
+            <h1>Logos Profesionales para WhatsApp</h1>
+            <p>¡Dale un toque profesional a tu WhatsApp con nuestros logos exclusivos! En GALAXIA LOGO EDITORS creamos:</p>
+            <p>🎨 Logos personalizados desde 100 CUP<br>
+               ✨ Paquetes de stickers desde 50 CUP<br>
+               🖌️ Diseños 100% originales<br>
+               ⚡ Entrega inmediata<br>
+               🔁 Revisiones ilimitadas</p>
+            <p>Nuestros diseños incluyen versión en alta resolución, fondo transparente y ajustes para perfecta visualización en WhatsApp. ¡Transforma tu imagen digital hoy mismo!</p>
+        </div>
+
+        <div class="imagen-muestra">
+            <img src="logo.jpg" alt="Logo de muestra">
+        </div>
+    </div>
+</body>
+</html>
